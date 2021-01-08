@@ -155,7 +155,7 @@ function displayTime() {
 	} else {
 		localStorage.setItem('mostRecentScore', score);
 
-		return window.location.assign('./end-game.html');
+		return window.location.assign('./assets/htmls/game.html');
 	}
 }
 
@@ -166,7 +166,7 @@ var getNewQuestion = function() {
 		// end quiz and save user score
 		localStorage.setItem('mostRecentScore', score);
 
-		return window.location.assign('./end-game.html');
+		return window.location.assign('./assets/htmls/game.html');
 	}
 
 	questionCounter++;
