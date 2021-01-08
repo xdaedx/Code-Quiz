@@ -5,4 +5,4 @@ Also able to add yourself into a leaderboard with other highscores.
 # Deployed Website
 https://xdaedx.github.io/Code-Quiz/
 
-![image]()
+![image](https://github.com/xdaedx/Code-Quiz/blob/master/assets/images/Capture.PNG)
