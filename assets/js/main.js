@@ -7,7 +7,7 @@ const progressBarFullEl = document.querySelector('#progress-bar-full');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
-let timer = 120;
+let timer = 100;
 let questionCounter = 0;
 let availableQuestions = [];
 let timerObject = '';
