@@ -88,11 +88,11 @@
   }
   
   #saveScoreBtn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(51, 255, 0, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(51, 255, 0, 0.151);
   }
   
   #saveScoreBtn[disabled] {
-    background: rgb(216, 9, 61);
+    background: rgba(216, 9, 9, 0.185);
   }
   
   #saveScoreBtn[disabled]:hover {
@@ -141,7 +141,7 @@
   
   #end-text {
     font-size: 2.4rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
   }
   

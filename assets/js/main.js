@@ -1,4 +1,4 @@
-//Quiz questions and answers in an object oriented format
+/* Quiz questions and answers with array*/
 const questionEl = document.querySelector('#question');
 const choicesEl = Array.from(document.querySelectorAll('.choice-text'));
 const progressTextEl = document.querySelector('#progress-text');
@@ -134,11 +134,11 @@ let question = [
 	}
 ]
 
-// set points per correct answer and number of questions
+/* set points per correct answer and number of questions */
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
-// ensure game variables are reset for each new game
+/* game variables are reset for each new game */
 var startGame = function() {
 	questionCounter = 0;
 	score = 0;
@@ -147,7 +147,7 @@ var startGame = function() {
 	getNewQuestion();
 };
 
-// decrement timer and go to end screen when time runs out
+/* decrease timer and go to end screen when it runs out */
 function displayTime() {
 	timerTextEl.innerHTML = timer;
 	if(timer > 0) {
@@ -159,7 +159,7 @@ function displayTime() {
 	}
 }
 
-// Question generator
+/* Question generator */
 var getNewQuestion = function() {
 	// check if availableQuestions list is depleted or MAX_QUESTIONS limit reached
 	if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
@@ -191,7 +191,7 @@ var getNewQuestion = function() {
 	acceptingAnswers = true;
 };
 
-// check correct and incorrect 
+/* checking correct and incorrect */
 choicesEl.forEach(choice => {
 	choice.addEventListener('click', e => {
 		if(!acceptingAnswers) return
